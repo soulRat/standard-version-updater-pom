@@ -11,7 +11,8 @@
 ```json
 {
   "devDependencies": {
-    "@soul-rat/standard-version-updater-pom": "^1.0.0"
+    "@soul-rat/standard-version-updater-pom": "^${latest}",
+    "xmlbuilder2": "^2.4.1"
   }
 }
 ```
