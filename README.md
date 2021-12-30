@@ -1,41 +1,59 @@
 # `standard-version-updater-pom`
 
-The
+
 [conventional-changelog/standard-version](https://github.com/conventional-changelog/standard-version)
-updater for Gradle build files.
+版本管理工具 pom篇
 
-## Installation
+## 安装
 
-
-1. create `package.json` in the project root dir.
+1. 在根目录创建 `package.json`.
 
 ```json
 {
-	"name": "you app name",
-	"version": "1.0.0"
+  "devDependencies": {
+    "@soul-rat/standard-version-updater-pom": "^1.0.0"
+  }
 }
 ```
 
-2. install this tool
+2. 安装npm包
 
 ```shell
-$ npm install --save-dev @soulRat/standard-version-updater-pom
+$ npm install --save-dev @soul-rat/standard-version-updater-pom
 ```
 
-## Configuration
+## 配置
 
 
-create `.versionrc.js` config file.
+1. 根目录创建 `.versionrc.js`.
 
 ```js
 // .versionrc.js
-const xmlUpdater = require('standard-version-updater-pom');
-const xmlTracker = {
-  filename: 'pom.xml',
-  updater: xmlUpdater,
+const xmlUpdater = require('@soul-rat/standard-version-updater-pom');
+const xmlTracker1 = {
+    filename: 'pom.xml',
+    updater: xmlUpdater,
+};
+//如果是多模块，就添加多个xmlTracker
+const xmlTracker2 = {
+    filename: 'spring-web/pom.xml',
+    updater: xmlUpdater,
+};
+const xmlTracker3 = {
+    filename: 'spring-biz/pom.xml',
+    updater: xmlUpdater,
+};
+const xmlTracker4 = {
+    filename: 'spring-common/pom.xml',
+    updater: xmlUpdater,
+};
+const xmlTracker5 = {
+    filename: 'spring-dal/pom.xml',
+    updater: xmlUpdater,
 };
 module.exports = {
-  packageFiles: [xmlTracker],
-  bumpFiles: [xmlTracker],
+    packageFiles: [xmlTracker1, xmlTracker2, xmlTracker3, xmlTracker4, xmlTracker5],
+    bumpFiles: [xmlTracker1, xmlTracker2, xmlTracker3, xmlTracker4, xmlTracker5],
 };
 ```
+2. 执行对应的 standard-version 命令
