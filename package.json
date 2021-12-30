@@ -1,0 +1,23 @@
+{
+  "name": "standard-version-updater-pom",
+  "version": "1.0.0",
+  "description": "standard-version 修改 pom 文件中的版本",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulRat/standard-version-updater-pom.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soulRat/standard-version-updater-pom/issues"
+  },
+  "homepage": "https://github.com/soulRat/standard-version-updater-pom#readme",
+  "devDependencies": {
+    "xmlbuilder2": "^2.4.1"
+  }
+}
