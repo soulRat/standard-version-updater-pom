@@ -1,6 +1,6 @@
 {
   "name": "@soul-rat/standard-version-updater-pom",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "standard-version 修改 pom 文件中的版本",
   "main": "index.js",
   "scripts": {

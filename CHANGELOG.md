@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/soulRat/standard-version-updater-pom/compare/v1.1.0...v1.2.0) (2021-12-30)
+
+
+### Features
+
+* 修改readme文件 ([728f9ec](https://github.com/soulRat/standard-version-updater-pom/commit/728f9ec4822c8823f6c3452019eac9fbf0ddc933))
+
 ## [1.1.0](https://github.com/soulRat/standard-version-updater-pom/compare/v1.0.0...v1.1.0) (2021-12-30)
 
 
